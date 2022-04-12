@@ -21,11 +21,11 @@ app.use((req,res,next)=>{
   // res.sendFile(path.join(__dirname,'.','HTML','404.html'));
 })
 app.listen(4200);
-//handlebars
-// const expressHbs=require('express-handlebars');
-// app.engine('hbs',expressHbs());
-// app.set('view engine','hbs');
-// app.set('views','HTML/handlebars');
+handlebars
+const expressHbs=require('express-handlebars');
+app.engine('hbs',expressHbs());
+app.set('view engine','hbs');
+app.set('views','HTML/handlebars');
 
   //pug
 //app.set  is use for global configaration
